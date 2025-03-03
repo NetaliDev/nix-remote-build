@@ -3,8 +3,6 @@
 writeShellScriptBin "nix-remote-build" ''
     set -eou pipefail
 
-    ARGC=$#
-
     function print_help {
         echo "Usage: $0 [-c] [-n] -o <Flake-Output> -b <Build-Host>"
         echo ""
